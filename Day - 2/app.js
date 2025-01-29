@@ -47,7 +47,7 @@
 // let name = prompt("Adınızı giriniz"); // Kullanıcıdan veri alır, bu veriyi name değişkenine atar ve daima string olarak alır.
 
 
-//! Tür Dönüşümleri
+//! Tip Dönüşümleri
 
 //?    Number(), String(), Boolean()
 
