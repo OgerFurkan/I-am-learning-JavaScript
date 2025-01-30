@@ -28,5 +28,11 @@
 // }
 // selamla("Furkan");
 
+//! Return
+// function selamla(name) { Burada fonksiyon tanımlanır ve fonksiyonun içindeki işlemler yapilirken parametre alınır ve return ile dışarıya veri gönderilir.
+//     return `Merhaba ${name}`;
+// }
+// console.log(selamla("Furkan"));
+
 
     
