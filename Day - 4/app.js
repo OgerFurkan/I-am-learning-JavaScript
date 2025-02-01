@@ -13,7 +13,7 @@
 //? numbers.concat(numbers2); // iki diziyi birleştirir ve dönderir.
 //? numbers.slice(0, 2); // 1. parametre başlangıç indexi, 2. parametre bitiş indexi (bitiş indexi dahil değil)
 //? numbers.indexOf(30); // elemanın indexini dönderir. eğer eleman yoksa -1 dönderir.
-//? numbers.includes(30); // elemanın dizide olup olmadığını dönderir. true veya false
+//? numbers.includes(30,0); // elemanın dizide olup olmadığını dönderir. true veya false. ilk parametre aranacak eleman ikinci parametre aramaya başlanacak index
 //? numbers.split(","); // stringi diziye çevirir ve dönderir ,'e göre ayırır.
 //? numbers.reverse(); // diziyi ters çevirir ve dönderir.
 //? numbers.sort(); // diziyi sıralar (küçükten büyüğe )
@@ -59,13 +59,13 @@ let search = prompt("Aramak istediğiniz ürünü giriniz: ");
 searchProducts(products, search);
 
 function searchProducts(products, search) {
-    products.forEach(function(product){
-        if(product.name.toLowerCase().includes(search.toLowerCase())) {
-            console.log("--------------------")
-            console.log("Urun Adi: ", product.name, "\n Fiyati: ", product.price, "TL\n Markas':", product.brand);
-            console.log("--------------------")
-        }
-    });
+products.forEach(function(product){
+    if(product.name.toLowerCase().includes(search.toLowerCase(),0)) {
+        console.log("--------------------")
+        console.log("Urun Adi: ", product.name, "\n Fiyati: ", product.price, "TL\n Markas':", product.brand);
+        console.log("--------------------")
+    }
+});
 }
 
 
