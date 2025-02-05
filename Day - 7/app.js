@@ -42,7 +42,7 @@
 // paragraf.style.border = "1px solid black"; // Burda bize paragraf elementinin kenar kalınlığını 1px yapar ve rengini siyah yapar.
 
 //......... Gibi özelliklerle elementlerin stil özelliklerini değiştirebiliriz.
-
+ 
 //! HTML Elementleri Üzerinde Gezinme
 
 //? Parent'tan Child'a
@@ -115,6 +115,29 @@
 // list.removeChild(list.firstElementChild); // Burda bize list elementinin içindeki ilk li elementini siler.
 
 //! Element Değiştirme
+
+// const h1 = document.querySelector("h1"); // Burda bize h1 elementini seçer.
+
+// const h2 = document.createElement("h2"); // Burda bize h2 elementi oluşturur.
+// h2.id = "title"; // Burda bize h2 elementinin id'sini belirler.
+// h2.textContent = "Furkan Öger"; // Burda bize h2 elementinin içeriğini belirler.
+// h2.className = "title"; // Burda bize h2 elementinin class'larını belirler.
+// h1.replaceWith(h2); // Burda bize h1 elementini h2 elementi ile değiştirir.
+
+
+// const parent = document.querySelector("#main"); // Burda bize id'si main olan elementi seçer.
+
+// parent.replaceChild(h2, parent.childNodes[0]); // Burda bize parent elementinin 0. indexdeki child elementini h2 elementi ile değiştirir.
+// parent.replaceChild(h2, parent.firstElementChild); // Burda bize parent elementinin ilk child elementini h2 elementi ile değiştirir.
+// parent.replaceChild(h2, parent.children[0]); // Burda bize parent elementinin 0. indexdeki child elementini h2 elementi ile değiştirir.
+// parent.replaceChild(h2, parent.querySelector("h1")); // Burda bize parent elementinin h1 elementini h2 elementi ile değiştirir.
+
+
+
+
+
+
+
 
  
 
